@@ -6,7 +6,7 @@ const prixPotion = 10;
 
 // Déclaration des variables
 let nbPotions = 10;
-let estOuverte = false;
+let estOuverte = true;
 
 // Exercice 2 : Affichage conditionnel
 
@@ -55,14 +55,14 @@ switch (choix) {
 // Exercice 4 : Calcul du prix total d'une commande de potion 🪙
 
 // Prompt
-const quantitePotion = parseInt(
+const quantiteDemande = parseInt(
   prompt("Quelle quantité de potion de soin souhaites tu ?")
 );
 
 // Prix totale
-const prixTotale = quantitePotion * prixPotion;
+const prixTotale = quantiteDemande * prixPotion;
 
 // Affichage du résultat dans la console
 console.log(
-  `Prix de ${quantitePotion} potions de soins : ${prixTotale} 🪙 mon cher Aventurier. 💸.`
+  `Prix de ${quantiteDemande} potions de soins : ${prixTotale} 🪙 mon cher Aventurier. 💸.`
 );
