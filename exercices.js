@@ -93,3 +93,11 @@ if (quantiteDemande > nbPotions) {
     `Il vous reste ${bourseAventurier} pièces d'or dans votre bourse.`
   );
 }
+
+// Exercice 6 : Liste des potions
+
+// Déclaration d'un tableau
+const nomsPotions = ["Spiruline", "Vitamine C", "Vitamine D"];
+
+// Affichage du tableau dans la console
+console.log(nomsPotions);
