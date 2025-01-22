@@ -66,3 +66,30 @@ const prixTotale = quantiteDemande * prixPotion;
 console.log(
   `Prix de ${quantiteDemande} potions de soins : ${prixTotale} 🪙 mon cher Aventurier. 💸.`
 );
+
+// Exercice 5 : Bourse de l'Aventurier 💰
+
+// Argent initial
+let bourseAventurier = 50;
+
+// Vérification
+if (quantiteDemande > nbPotions) {
+  console.log("Désolé, il n'y a pas assez de potions en stock !");
+} else if (quantiteDemande * prixPotion > bourseAventurier) {
+  console.log(
+    "Désolé, vous n'avez pas assez d'argent pour acheter cette quantité de potions !"
+  );
+} else {
+  // Calculs : mise à jour du stock et de la bourse
+  nbPotions -= quantiteDemande;
+  bourseAventurier -= quantiteDemande * prixPotion;
+
+  // Message de confirmation
+  console.log(
+    `Merci pour votre achat ! Vous avez acheté ${quantiteDemande} potion(s).`
+  );
+  console.log(`Il reste ${nbPotions} potion(s) en stock.`);
+  console.log(
+    `Il vous reste ${bourseAventurier} pièces d'or dans votre bourse.`
+  );
+}
