@@ -129,3 +129,15 @@ nomsPotions.pop("Magnésium");
 
 // Affichage de la liste mise à jour
 console.log(nomsPotions);
+
+// Exercice 10 : Rangeons les informations de la potion de soin dans un objet 🧹
+
+// Création d'un objet
+const informationsPotion = {
+  nom: "Spiruline",
+  prix: 10,
+  stock: 20,
+};
+
+// Affichage de l'objet dans la console
+console.log(informationsPotion);
