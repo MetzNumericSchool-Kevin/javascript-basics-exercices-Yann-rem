@@ -51,3 +51,18 @@ switch (choix) {
       "Mh... Désolé aventurier, je ne comprends pas ce que tu souhaites. Refais ton choix ! 😕"
     );
 }
+
+// Exercice 4 : Calcul du prix total d'une commande de potion 🪙
+
+// Prompt
+const quantitePotion = parseInt(
+  prompt("Quelle quantité de potion de soin souhaites tu ?")
+);
+
+// Prix totale
+const prixTotale = quantitePotion * prixPotion;
+
+// Affichage du résultat dans la console
+console.log(
+  `Prix de ${quantitePotion} potions de soins : ${prixTotale} 🪙 mon cher Aventurier. 💸.`
+);
