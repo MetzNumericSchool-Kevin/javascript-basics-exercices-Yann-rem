@@ -141,3 +141,11 @@ const informationsPotion = {
 
 // Affichage de l'objet dans la console
 console.log(informationsPotion);
+
+// Exercice 11 : Affichons les informations de la potion
+
+// Affiche le nom de la potion en utilisant la notation pointée .
+console.log(informationsPotion.nom);
+
+// Affiche le prix de la potion en utilisant la notation crochet []
+console.log(informationsPotion["prix"]);
