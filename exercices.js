@@ -121,3 +121,11 @@ nomsPotions.push("Magnésium");
 
 // Affichage de la liste mise à jour
 console.log(nomsPotions);
+
+// Exercice 9 : Finally, nope
+
+// Suppression d'un élément
+nomsPotions.pop("Magnésium");
+
+// Affichage de la liste mise à jour
+console.log(nomsPotions);
