@@ -149,3 +149,23 @@ console.log(informationsPotion.nom);
 
 // Affiche le prix de la potion en utilisant la notation crochet []
 console.log(informationsPotion["prix"]);
+
+// Execice 12 : C'est l'heure de faire l'inventaire...
+
+const inventaire = [
+  {
+    nom: "Spiruline",
+    prix: 10,
+    stock: 15,
+  },
+  {
+    nom: "Vitamine C",
+    prix: 15,
+    stock: 20,
+  },
+  {
+    nom: "Vitamine D",
+    prix: 20,
+    stock: 40,
+  },
+];
