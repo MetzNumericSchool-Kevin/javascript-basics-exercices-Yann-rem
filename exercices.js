@@ -169,3 +169,24 @@ const inventaire = [
     stock: 40,
   },
 ];
+
+// Exercice 13 : Aventurier, regarde tout ce que je vends !
+
+// Affiche ton inventaire à l'aventurier avec une boucle for
+console.log("Aventurier, regarde tout ce que je vends !");
+for (let i = 0; i < inventaire.length; i++) {
+  console.log(`Nom: ${inventaire[i].nom}`);
+  console.log(`Prix: ${inventaire[i].prix}`);
+  console.log(`Stock: ${inventaire[i].stock}`);
+}
+
+// Affiche ton inventaire avec Object.entries
+
+console.log("Aventurier, regarde tout ce que je vends !");
+for (const produit of inventaire) {
+  for (const cle of Object.keys(produit)) {
+    console.log(
+      `${cle.charAt(0).toUpperCase() + cle.slice(1)}: ${produit[cle]}`
+    );
+  }
+}
