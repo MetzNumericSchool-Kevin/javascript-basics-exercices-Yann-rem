@@ -101,3 +101,15 @@ const nomsPotions = ["Spiruline", "Vitamine C", "Vitamine D"];
 
 // Affichage du tableau dans la console
 console.log(nomsPotions);
+
+// Exercice 7 : Affichage des potions
+
+// Affichage de la première et de la dernière potion
+console.log(`Première potion : ${nomsPotions[0]}`);
+console.log(`Dernière potion : ${nomsPotions.at(-1)}`);
+
+// Affichage de toutes les potions
+console.log("Liste des potions :");
+for (const nomPotion of nomsPotions) {
+  console.log(nomPotion);
+}
